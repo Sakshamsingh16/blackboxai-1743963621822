@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Core Concepts | SSR-TECH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-book-open text-indigo-600 text-xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">SSR-TECH</span>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100">Home</a>
+                    <a href="index.html#chapters" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100">Chapters</a>
+                    <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-100">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chapter Content -->
+    <div class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Chapter 2: Core Concepts of SSR-TECH
+            </h1>
+            <div class="mt-4 flex items-center justify-center space-x-4">
+                <span class="text-sm text-gray-500">Estimated reading time: 15 minutes</span>
+                <span class="text-sm text-gray-500">Published: June 8, 2023</span>
+            </div>
+        </div>
+
+        <div class="content prose prose-indigo max-w-none">
+            <p class="text-lg text-gray-700">
+                Now that we've covered the basics of Server-Side Rendering, let's dive deeper into the core concepts that make SSR-TECH a powerful framework for modern web applications. Understanding these principles will help you make the most of the framework's capabilities.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">The SSR-TECH Rendering Pipeline</h2>
+            <p>
+                The SSR-TECH framework implements a sophisticated rendering pipeline that optimizes both server-side and client-side rendering. Here's a high-level overview of the process:
+            </p>
+
+            <div class="bg-white shadow rounded-lg p-6 my-6">
+                <ol class="list-decimal pl-5 space-y-3">
+                    <li><strong>Initial Request:</strong> The server receives a request for a page</li>
+                    <li><strong>Data Fetching:</strong> All necessary data is collected from APIs or databases</li>
+                    <li><strong>Component Rendering:</strong> Components are rendered to static HTML on the server</li>
+                    <li><strong>Hydration:</strong> The client takes over and "hydrates" the static HTML into interactive components</li>
+                    <li><strong>Subsequent Navigation:</strong> Client-side routing handles page transitions without full reloads</li>
+                </ol>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Key Architectural Patterns</h2>
+            <p>
+                SSR-TECH employs several architectural patterns that contribute to its performance and flexibility:
+            </p>
+
+            <div class="grid gap-6 md:grid-cols-2 mt-6">
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-indigo-800 mb-2">Isomorphic JavaScript</h3>
+                    <p class="text-gray-700">The same code runs on both server and client, reducing duplication and improving consistency.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-indigo-800 mb-2">Progressive Hydration</h3>
+                    <p class="text-gray-700">Components become interactive as needed, rather than all at once, improving perceived performance.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-indigo-800 mb-2">Static Generation</h3>
+                    <p class="text-gray-700">Pages can be pre-rendered at build time for content that doesn't change frequently.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="text-lg font-medium text-indigo-800 mb-2">Edge Caching</h3>
+                    <p class="text-gray-700">Rendered pages are cached at the edge for faster delivery to users worldwide.</p>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-12 pt-6 border-t border-gray-200">
+                <a href="chapter-1.html" class="inline-flex items-center text-indigo-600 hover:text-indigo-900">
+                    <i class="fas fa-arrow-left mr-2"></i> Previous Chapter
+                </a>
+                <a href="chapter-3.html" class="inline-flex items-center text-indigo-600 hover:text-indigo-900">
+                    Next Chapter <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-base text-gray-400">
+                &copy; 2023 SSR-TECH. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
