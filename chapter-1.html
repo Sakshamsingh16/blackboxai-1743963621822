@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Introduction | SSR-TECH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-book-open text-indigo-600 dark:text-indigo-400 text-xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">SSR-TECH</span>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+                    <a href="index.html#chapters" class="px-3 py-2 rounded-md text-sm font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Chapters</a>
+                    <a href="#" class="px 3 py-2 rounded-md text-sm font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+                    <button id="theme-toggle" class="ml-4 p-2 rounded-full focus:outline-none">
+                        <i class="fas fa-moon text-gray-500 dark:text-yellow-300"></i>
+                    </button>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-button" class="p-2 rounded-md focus:outline-none">
+                        <i class="fas fa-bars text-gray-500 dark:text-gray-300"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden sm:hidden bg-white dark:bg-gray-800 pb-3 px-2">
+            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+            <a href="index.html#chapters" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Chapters</a>
+            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+            <button id="theme-toggle-mobile" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                <i class="fas fa-moon mr-2"></i> Toggle Dark Mode
+            </button>
+        </div>
+    </nav>
+
+    <!-- Chapter Content -->
+    <div class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                Chapter 1: Introduction to SSR-TECH
+            </h1>
+            <div class="mt-4 flex items-center justify-center space-x-4">
+                <span class="text-sm text-gray-500 dark:text-gray-300">Estimated reading time: 10 minutes</span>
+                <span class="text-sm text-gray-500 dark:text-gray-300">Published: June 1, 2023</span>
+            </div>
+        </div>
+
+        <div class="content prose prose-indigo max-w-none">
+            <p class="text-lg text-gray-700 dark:text-gray-300">
+                Server-Side Rendering (SSR) has become a fundamental technique in modern web development, offering significant advantages in terms of performance, search engine optimization, and user experience. In this chapter, we'll explore the core concepts behind SSR and why it has become such an important part of the SSR-TECH ecosystem.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">What is Server-Side Rendering?</h2>
+            <p class="dark:text-gray-300">
+                Server-Side Rendering refers to the process of generating the complete HTML for a web page on the server before sending it to the client's browser. This contrasts with traditional client-side rendering where the browser downloads minimal HTML and then constructs the page using JavaScript.
+            </p>
+
+            <div class="bg-indigo-50 dark:bg-indigo-900 p-4 rounded-lg my-6">
+                <h3 class="text-lg font-medium text-indigo-800 dark:text-indigo-200 mb-2">Key Benefits of SSR:</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-300">
+                    <li>Faster initial page load times</li>
+                    <li>Better SEO as content is immediately available to crawlers</li>
+                    <li>Improved performance on low-powered devices</li>
+                    <li>More consistent user experience across different browsers</li>
+                </ul>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-4">SSR in the SSR-TECH Framework</h2>
+            <p class="dark:text-gray-300">
+                The SSR-TECH framework takes these benefits further by implementing an optimized hybrid approach that combines the best aspects of SSR with modern client-side interactivity. Our framework automatically determines the optimal rendering strategy for each component, ensuring maximum performance without sacrificing developer experience.
+            </p>
+
+            <div class="flex justify-between mt-12 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <a href="index.html" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-300">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Chapters
+                </a>
+                <a href="chapter-2.html" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-300">
+                    Next Chapter <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-base text-gray-400 dark:text-gray-500">
+                &copy; 2023 SSR-TECH. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Dark Mode and Mobile Menu Script -->
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+        const html = document.documentElement;
+
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        // Toggle dark mode
+        function toggleDarkMode() {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            updateThemeIcon();
+        }
+
+        // Update theme icon
+        function updateThemeIcon() {
+            const icon = themeToggle.querySelector('i');
+            if (html.classList.contains('dark')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+
+        themeToggle.addEventListener('click', toggleDarkMode);
+        themeToggleMobile.addEventListener('click', toggleDarkMode);
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
